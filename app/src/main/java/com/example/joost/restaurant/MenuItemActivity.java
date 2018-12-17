@@ -41,7 +41,12 @@ public class MenuItemActivity extends AppCompatActivity {
 
         nameText.setText(name);
         descriptionText.setText(description);
-        priceText.setText(Double.toString(price));
+
+        // Display price correctly
+        String priceString = Double.toString(item.getPrice());
+        priceString = priceString.replace(".", ",");
+        priceText.setText("€ " + priceString + "0");
+
         Picasso.with(context).load(imageUrl).into(imageView);
 
         Log.d("hierbenje", "nieuwe pagina einde");

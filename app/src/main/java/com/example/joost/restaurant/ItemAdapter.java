@@ -41,7 +41,11 @@ public class ItemAdapter extends ArrayAdapter<MenuItem> {
         TextView name = listView.findViewById(R.id.nameText);
         name.setText(item.getName());
         TextView price = listView.findViewById(R.id.priceText);
-        price.setText(Double.toString(item.getPrice()));
+
+        // Display price correctly
+        String priceString = Double.toString(item.getPrice());
+        priceString = priceString.replace(".", ",");
+        price.setText("€ " + priceString + "0");
 
         String imageUrl = item.getImageUrl();
 
