@@ -5,6 +5,7 @@
 ## Description
 
 App that allows users to navigate through a restaurant menu.
+First, users choose between appetizers and entrees. Subsequently they can choose between different dishes to gain detailed information.
 
 Menu overview: <br/>
 <img src="/doc/Screenshot_Menu.png" height="30%" width="30%"/>
